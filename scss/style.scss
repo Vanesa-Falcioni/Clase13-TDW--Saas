@@ -1,0 +1,115 @@
+$primary-color: #1cd1b0;
+$secundary-color: #00669f;
+$terciary-color: #f3f3f3;
+$bg-color: #f4f4f4;
+
+// reset y bases
+* {
+  box-sizing: border-box;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bg-color;
+}
+// cuerpo principal
+main {
+  .tarjeta {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    padding: 20px 0;
+  }
+}
+// encabezados
+header {
+  .Descuento {
+    background: $primary-color;
+    color: black;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    height: 38px;
+  }
+  .titulo h1 {
+    background: $secundary-color;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    font-weight: 400;
+    font-size: 32px;
+    height: 101px;
+  }
+}
+// tarjetas estilo
+.tarjeta-card {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: $terciary-color;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0px 4px 4px black;
+  margin: 0 10px;
+
+  .tarjeta-cabecera {
+    position: relative;
+    height: 193px;
+
+    .tarjeta-fondo {
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      width: 300px;
+      height: 193px;
+      object-fit: cover;
+    }
+    .tarjeta-perfil {
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      border-radius: 50%;
+      top: 128px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .tarjeta-icono {
+      position: absolute;
+      top: 16px;
+      left: 21px;
+    }
+  }
+  .tarjeta-cuerpo {
+    text-align: center;
+    padding: 65px 20px 20px 20px;
+    background-color: $terciary-color;
+
+    h2 {
+      font-size: 22.4px;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    p {
+      font-size: 0.85rem;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    a {
+      display: inline-block;
+      background-color: $secundary-color;
+      color: $terciary-color;
+      text-decoration: none;
+      padding: 10px 25px;
+      border: 2px;
+    }
+  }
+}
+// footer
+footer {
+  background-color: $secundary-color;
+  color: $terciary-color;
+  padding: 2% 1%;
+  margin-top: 60px;
+  height: 51px;
+}
